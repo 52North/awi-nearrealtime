@@ -36,8 +36,8 @@ services:
         #build: ./awi-nrt-series-api
         #build: https://github.com/52North/awi-nearrealtime-series-proxy.git#master
         #image: awi/nearrealtime-series-proxy:latest
-        build: https://github.com/52North/awi-nearrealtime-series-proxy.git#v1.0.0
-        image: awi/nearrealtime-series-proxy:1.0.0
+        build: https://github.com/52North/awi-nearrealtime-series-proxy.git#v1.0.1
+        image: awi/nearrealtime-series-proxy:1.0.1
         depends_on:
         - series-api-db
         - sos

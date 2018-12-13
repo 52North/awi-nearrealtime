@@ -1,0 +1,378 @@
+{
+  "settings" : {
+    "service.cachePersistenceDelay" : {
+      "type" : "integer",
+      "value" : 30
+    },
+    "service.capabilitiesCacheUpdateInterval" : {
+      "type" : "integer",
+      "value" : 120
+    },
+    "service.exposeChildObservableProperties" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "misc.characterEncoding" : {
+      "type" : "string",
+      "value" : "UTF-8"
+    },
+    "misc.includeStackTraceInExceptionReport" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "service.defaultEpsg" : {
+      "type" : "integer",
+      "value" : 4326
+    },
+    "service.default3DEpsg" : {
+      "type" : "integer",
+      "value" : 4979
+    },
+    "service.defaultResponseEpsg" : {
+      "type" : "integer",
+      "value" : 4326
+    },
+    "service.defaultRespopnse3DEpsg" : {
+      "type" : "integer",
+      "value" : 4979
+    },
+    "statistics.counting-outputstream" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "misc.httpResponseCodeUseInKvpAndPoxBinding" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "misc.includeOriginalRequest" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "service.crsAuthority" : {
+      "type" : "string",
+      "value" : "EPSG"
+    },
+    "misc.datasourceNorthingFirst" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "misc.srsNamePrefixSosV2" : {
+      "type" : "string",
+      "value" : "http://www.opengis.net/def/crs/EPSG/0/"
+    },
+    "service.supportedCrs" : {
+      "type" : "string",
+      "value" : "4326,31466,31467,4258"
+    },
+    "misc.switchCoordinatesForEpsgCodes" : {
+      "type" : "string",
+      "value" : "2044-2045;2081-2083;2085-2086;2093;2096-2098;2105-2132;2169-2170;2176-2180;2193;2200;2206-2212;2319;2320-2462;2523-2549;2551-2735;2738-2758;2935-2941;2953;3006-3030;3034-3035;3058-3059;3068;3114-3118;3126-3138;3300-3301;3328-3335;3346;3350-3352;3366;3416;4001-4999;20004-20032;20064-20092;21413-21423;21473-21483;21896-21899;22171;22181-22187;22191-22197;25884;27205-27232;27391-27398;27492;28402-28432;28462-28492;30161-30179;30800;31251-31259;31275-31279;31281-31290;31466-31700"
+    },
+    "service.SpatialDatasource" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "service.blockGetObservationRequestsWithoutRestriction" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "exi.fidelity.dtd" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "exi.fidelity.lexical.value" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "exi.fidelity.prefixes" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "exi.fidelity.processing.instructions" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "exi.fidelity.comments" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "exi.fidelity" : {
+      "type" : "choice",
+      "value" : "exi.fidelity.specific"
+    },
+    "exi.alignment" : {
+      "type" : "choice",
+      "value" : "BIT_PACKED"
+    },
+    "exi.grammar" : {
+      "type" : "choice",
+      "value" : "exi.grammar.schemaless"
+    },
+    "exi.grammar.schema" : {
+      "type" : "choice",
+      "value" : "exi.grammar.schema.sos.20"
+    },
+    "procedureDesc.DESCRIPTION_TEMPLATE" : {
+      "type" : "string",
+      "value" : "The '%s' with the id '%s' observes the following properties: '%s'."
+    },
+    "procedureDesc.GENERATE_CLASSIFICATION" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "procedureDesc.CLASSIFIER_INTENDED_APPLICATION_VALUE" : {
+      "type" : "string",
+      "value" : null
+    },
+    "procedureDesc.CLASSIFIER_INTENDED_APPLICATION_DEFINITION" : {
+      "type" : "string",
+      "value" : "urn:ogc:def:classifier:OGC:1.0:application"
+    },
+    "procedureDesc.CLASSIFIER_PROCEDURE_TYPE_DEFINITION" : {
+      "type" : "string",
+      "value" : "urn:ogc:def:classifier:OGC:1.0:procedureType"
+    },
+    "procedureDesc.CLASSIFIER_PROCEDURE_TYPE_VALUE" : {
+      "type" : "string",
+      "value" : null
+    },
+    "procedureDesc.IDENTIFIER_SHORT_NAME_DEFINITION" : {
+      "type" : "string",
+      "value" : "urn:ogc:def:identifier:OGC:1.0:shortname"
+    },
+    "procedureDesc.USE_SERVICE_CONTACT_AS_SENSOR_CONTACT" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "procedureDesc.IDENTIFIER_LONG_NAME_DEFINITION" : {
+      "type" : "string",
+      "value" : "urn:ogc:def:identifier:OGC:1.0:longname"
+    },
+    "procedureDesc.LAT_LONG_UOM" : {
+      "type" : "string",
+      "value" : "degree"
+    },
+    "procedureDesc.ALTITUDE_UOM" : {
+      "type" : "string",
+      "value" : "m"
+    },
+    "procedureDesc.PROCESS_METHOD_RULES_DEFINITION_DESCRIPTION_TEMPLATE" : {
+      "type" : "string",
+      "value" : "The procedure '%s' generates the following output(s): '%s'. The input(s) is/are unknown (this description is generated)."
+    },
+    "procedureDesc.ENRICH_WITH_OFFERINGS" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "procedureDesc.ENRICH_WITH_FEATURES" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "procedureDesc.ENRICH_WITH_DISCOVERY_INFORMATION" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "service.security.transactional.active" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "service.transactionalAllowedIps" : {
+      "type" : "string",
+      "value" : "127.0.0.1"
+    },
+    "service.transactionalAllowedProxies" : {
+      "type" : "string",
+      "value" : "127.0.0.1"
+    },
+    "service.transactionalToken" : {
+      "type" : "string",
+      "value" : null
+    },
+    "request.procedure.instancesOnly" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "request.procedure.aggregationOnly" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "service.encodeFullChildrenInDescribeSensor" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "service.addOutputsToSensorML" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "misc.decimalSeparator" : {
+      "type" : "string",
+      "value" : "."
+    },
+    "misc.tokenSeparator" : {
+      "type" : "string",
+      "value" : ","
+    },
+    "service.streaming.encoding" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "misc.tupleSeparator" : {
+      "type" : "string",
+      "value" : "@@"
+    },
+    "service.response.validate" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "service.serviceURL" : {
+      "type" : "uri",
+      "value" : "https://sos.awi.de/SOS/service"
+    },
+    "misc.srsNamePrefixSosV1" : {
+      "type" : "string",
+      "value" : "urn:ogc:def:crs:EPSG::"
+    },
+    "i18n.defaultLanguage" : {
+      "type" : "string",
+      "value" : "eng"
+    },
+    "i18n.showAllLanguageValues" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "profile.hydrology.maxReturnedTimeSeries" : {
+      "type" : "integer",
+      "value" : 0
+    },
+    "profile.hydrology.maxReturnedValue" : {
+      "type" : "integer",
+      "value" : 0
+    },
+    "profile.hydrology.overallExtrema" : {
+      "type" : "boolean",
+      "value" : true
+    },
+    "serviceIdentification.accessConstraints" : {
+      "type" : "string",
+      "value" : "NONE"
+    },
+    "serviceIdentification.file" : {
+      "type" : "file",
+      "value" : null
+    },
+    "serviceIdentification.abstract" : {
+      "type" : "multilingual",
+      "value" : {
+        "eng" : "52North Sensor Observation Service - Data Access for the Sensor Web"
+      }
+    },
+    "serviceIdentification.title" : {
+      "type" : "multilingual",
+      "value" : {
+        "eng" : "52N SOS"
+      }
+    },
+    "serviceIdentification.fees" : {
+      "type" : "string",
+      "value" : "NONE"
+    },
+    "serviceIdentification.keywords" : {
+      "type" : "string",
+      "value" : null
+    },
+    "serviceProvider.email" : {
+      "type" : "string",
+      "value" : "c.autermann@52north.org"
+    },
+    "serviceProvider.role.codespace" : {
+      "type" : "uri",
+      "value" : null
+    },
+    "serviceProvider.hoursOfService" : {
+      "type" : "string",
+      "value" : null
+    },
+    "serviceProvider.role.value" : {
+      "type" : "string",
+      "value" : null
+    },
+    "serviceProvider.file" : {
+      "type" : "file",
+      "value" : null
+    },
+    "serviceProvider.site" : {
+      "type" : "uri",
+      "value" : "https://www.awi.de/"
+    },
+    "serviceProvider.individualName" : {
+      "type" : "string",
+      "value" : "Christian Autermann"
+    },
+    "serviceProvider.positionName" : {
+      "type" : "string",
+      "value" : null
+    },
+    "serviceProvider.state" : {
+      "type" : "string",
+      "value" : "Bremen"
+    },
+    "serviceProvider.city" : {
+      "type" : "string",
+      "value" : "Bremerhaven"
+    },
+    "serviceProvider.country" : {
+      "type" : "string",
+      "value" : "Germany"
+    },
+    "serviceProvider.postalCode" : {
+      "type" : "string",
+      "value" : "27570"
+    },
+    "serviceProvider.contactInstructions" : {
+      "type" : "string",
+      "value" : null
+    },
+    "serviceProvider.onlineResource" : {
+      "type" : "string",
+      "value" : "TBA|TBA"
+    },
+    "serviceProvider.phone" : {
+      "type" : "string",
+      "value" : "004947148310"
+    },
+    "serviceProvider.address" : {
+      "type" : "string",
+      "value" : "Am Handelshafen 12"
+    },
+    "serviceProvider.facsimile" : {
+      "type" : "string",
+      "value" : "004947148311149"
+    },
+    "serviceProvider.name" : {
+      "type" : "string",
+      "value" : "Alfred-Wegener-Institut Helmholtz-Zentrum für Polar- und Meeresforschung"
+    },
+    "coding.characterEncoding" : {
+      "type" : "string",
+      "value" : "UTF-8"
+    },
+    "coding.srsNamePrefixURN" : {
+      "type" : "string",
+      "value" : "urn:ogc:def:crs:EPSG::"
+    },
+    "coding.srsNamePrefixURL" : {
+      "type" : "string",
+      "value" : "http://www.opengis.net/def/crs/EPSG/0/"
+    },
+    "operation.gda.forceValueCount" : {
+      "type" : "boolean",
+      "value" : false
+    },
+    "service.cacheFileFolder" : {
+      "type" : "file",
+      "value" : "/tmp/jetty"
+    }
+  },
+  "capabiltiesExtensions" : { },
+  "offeringExtensions" : { }
+}

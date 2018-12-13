@@ -1,0 +1,16 @@
+{
+  "dataSources": [
+    {
+      "itemName": "awi",
+      "url": "http://sos:8080/service",
+      "version": "2.0.0",
+      "type": "SOS",
+      "connector": "org.n52.sensorweb.awi.AWISOSConnector",
+      "job": {
+        "cronExpression": "0 0 0/1 * * ?",
+        "enabled": true,
+        "triggerAtStartup": true
+      }
+    }
+  ]
+}

@@ -22,7 +22,7 @@ services:
         #build: https://github.com/52North/awi-nearrealtime-sos.git#master
         #image: awi/nearrealtime-sos:latest
         build: https://github.com/52North/awi-nearrealtime-sos.git#v1.0.0
-        image: awi/nearrealtime-sos:v1.0.0
+        image: awi/nearrealtime-sos:1.0.0
         depends_on:
         - sos-db
         ports:
@@ -37,7 +37,7 @@ services:
         #build: https://github.com/52North/awi-nearrealtime-series-proxy.git#master
         #image: awi/nearrealtime-series-proxy:latest
         build: https://github.com/52North/awi-nearrealtime-series-proxy.git#v1.0.0
-        image: awi/nearrealtime-series-proxy:v1.0.0
+        image: awi/nearrealtime-series-proxy:1.0.0
         depends_on:
         - series-api-db
         - sos

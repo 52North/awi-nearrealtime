@@ -3,16 +3,16 @@ services:
     sos-db:
         build: https://github.com/52North/awi-nearrealtime-example-db.git#v1.0.0
         image: awi/nearrealtime-example-db:1.0.0
-        ports:
-        - 15432:5432
+        #ports:
+        #- 15432:5432
         environment:
         - POSTGRES_USER=postgres
         - POSTGRES_DB=nearrealtime
         - POSTGRES_PASSWORD=postgres
     series-api-db:
         image: mdillon/postgis:9.6-alpine
-        ports:
-        - 25432:5432
+        #ports:
+        #- 25432:5432
         environment:
         - POSTGRES_USER=postgres
         - POSTGRES_DB=nearrealtime

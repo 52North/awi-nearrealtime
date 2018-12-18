@@ -8,7 +8,7 @@ docker-compose up
 
 ## Services
 
-The `docker-compose.yml` file contains the following services:
+The [`docker-compose.yml`](https://github.com/52North/awi-nearrealtime/blob/master/docker-compose.yml) file contains the following services:
 
 ### `sos` - [AWI NearRealTime SOS](https://github.com/52North/awi-nearrealtime-sos)
 

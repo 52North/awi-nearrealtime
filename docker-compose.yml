@@ -76,7 +76,7 @@ services:
         volumes:
         - ./helgoland-settings.old.json:/usr/src/app/dist/settings.json:ro
         ports:
-        - 3003:80
+        - 3003:8080
     # Nginx fronted to proxy all services. Not yet working
     frontend:
         image: nginx:alpine

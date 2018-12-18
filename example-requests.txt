@@ -1,9 +1,0 @@
-http://localhost:3000/service?service=SOS&request=GetCapabilities
-
-http://localhost:3000/service?service=SOS&version=2.0.0&request=DescribeSensor&procedure=vessel:polarstern
-
-http://localhost:3000/service?service=SOS&version=2.0.0&request=GetFeatureOfInterest&featureOfInterest=PS100
-
-http://localhost:3000/service?service=SOS&version=2.0.0&request=GetDataAvailability&procedure=vessel:polarstern&featureOfInterest=PS100&observedProperty=no2
-
-http://localhost:3000/service?service=SOS&version=2.0.0&request=GetObservation&procedure=vessel:polarstern&featureOfInterest=PS100&observedProperty=no2

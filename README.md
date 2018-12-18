@@ -1,5 +1,11 @@
 # AWI NearRealTime Development Deployment
 
+## Starting
+
+```sh
+docker-compose up
+```
+
 ## Services
 
 The `docker-compose` file contains the following services:

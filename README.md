@@ -12,33 +12,29 @@ The [`docker-compose.yml`](https://github.com/52North/awi-nearrealtime/blob/mast
 
 ### `sos` - [AWI NearRealTime SOS](https://github.com/52North/awi-nearrealtime-sos)
 
-Available at: http://localhost:3000/service
+Available at: http://localhost:3000/sos/service
 
 Example requests:
-* http://localhost:3000/service?service=SOS&request=GetCapabilities
-* http://localhost:3000/service?service=SOS&version=2.0.0&request=DescribeSensor&procedure=vessel:polarstern
-* http://localhost:3000/service?service=SOS&version=2.0.0&request=GetFeatureOfInterest&featureOfInterest=PS100
-* http://localhost:3000/service?service=SOS&version=2.0.0&request=GetDataAvailability&procedure=vessel:polarstern&featureOfInterest=PS100&observedProperty=no2
-* http://localhost:3000/service?service=SOS&version=2.0.0&request=GetObservation&procedure=vessel:polarstern&featureOfInterest=PS100&observedProperty=no2
+* http://localhost:3000/sos/service?service=SOS&request=GetCapabilities
+* http://localhost:3000/sos/service?service=SOS&version=2.0.0&request=DescribeSensor&procedure=vessel:polarstern
+* http://localhost:3000/sos/service?service=SOS&version=2.0.0&request=GetFeatureOfInterest&featureOfInterest=PS100
+* http://localhost:3000/sos/service?service=SOS&version=2.0.0&request=GetDataAvailability&procedure=vessel:polarstern&featureOfInterest=PS100&observedProperty=no2
+* http://localhost:3000/sos/service?service=SOS&version=2.0.0&request=GetObservation&procedure=vessel:polarstern&featureOfInterest=PS100&observedProperty=no2
 
 
 ### `series-api` - [AWI NearRealTime Series SOS Proxy](https://github.com/52North/awi-nearrealtime-series-proxy)
 
-Available at: http://localhost:3001/api/
+Available at: http://localhost:3000/api/
 
 ### `helgoland` - [Current development version of Helgoland](https://github.com/52North/helgoland/tree/feature/angularUpgrade)
 
-Available at: http://localhost:3002/
-
-### `helgoland-old` - [Development version of Helgoland from 10/2017](https://github.com/autermann/helgoland/tree/awi)
-
-Available at: http://localhost:3003/
+Available at: http://localhost:3000/
 
 ### `frontend` - Nginx Proxy
 
-Nginx frontend intended to act as a gateway to the other services. Not yet working.
+Nginx frontend intended to act as a gateway to the other services.
 
-Available at: http://localhost:3004
+Available at: http://localhost:3000/
 
 ### `sos-db` - [NRT SOS database](https://github.com/52North/awi-nearrealtime-example-db)
 

@@ -12,8 +12,6 @@ services:
     # The Postgres database for the Series SOS Proxy
     series-api-db:
         image: mdillon/postgis:9.6-alpine
-        #ports:
-        #- 5432:5432
         environment:
         # These have also to be configured in series-api-application.properties
         - POSTGRES_USER=postgres
@@ -25,8 +23,6 @@ services:
         image: awi/nearrealtime-sos:1.0.0
         depends_on:
         - sos-db
-        ports:
-        - 3000:8080
         volumes:
         # For the cache.tmp file
         - /tmp/jetty
@@ -45,8 +41,6 @@ services:
         depends_on:
         - series-api-db
         - sos
-        ports:
-        - 3001:8080
         volumes:
         # Logging is currently configured to log to STDOUT
         - ./series-api-logback.xml:/var/lib/jetty/webapps/ROOT/WEB-INF/classes/logback.xml:ro
@@ -63,25 +57,13 @@ services:
         depends_on:
         - series-api
         volumes:
-        # This file should configure the user-facing URI of the series API, i.e. http://localhost:3001/api/
+        # This file should configure the user-facing URI of the series API, i.e. http://localhost:3000/api/
         - ./helgoland-settings.json:/usr/share/nginx/html/assets/settings.json:ro
-        ports:
-        - 3002:80
-    # Helgoland in the one-year-old version
-    helgoland-old:
-        build: https://github.com/autermann/helgoland.git#awi
-        image: 52north/helgoland:awi
-        depends_on:
-        - series-api
-        volumes:
-        - ./helgoland-settings.old.json:/usr/src/app/dist/settings.json:ro
-        ports:
-        - 3003:8080
     # Nginx fronted to proxy all services. Not yet working
     frontend:
         image: nginx:alpine
         ports:
-        - 3004:80
+        - 3000:80
         volumes:
         - ./nginx.conf:/etc/nginx/nginx.conf:ro
         depends_on:

@@ -56,8 +56,8 @@ services:
         - ./series-api-application.properties:/var/lib/jetty/webapps/ROOT/WEB-INF/classes/application.properties:ro
     # Helgoland in the current version, tagged from the branch feature/angularUpdate
     helgoland:
-        build: https://github.com/52North/helgoland.git#v2.0.0-alpha.4
-        image: 52north/helgoland:2.0.0-alpha.4
+        build: https://github.com/52North/helgoland.git#v2.0.0-alpha.5
+        image: 52north/helgoland:2.0.0-alpha.5
         #build: ../helgoland
         #image: 52north/helgoland:latest
         depends_on:

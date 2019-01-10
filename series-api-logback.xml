@@ -13,6 +13,7 @@
 	<logger name="com.sun.xml" level="ERROR" />
 	<logger name="org.geotools" level="WARN" />
 	<logger name="org.jboss.logging" level="WARN" />
+	<logger name="org.hibernate.orm.deprecation" level="OFF"/>
 
 	<root level="INFO">
 		<appender-ref ref="CONSOLE"/>
